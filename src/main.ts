@@ -9,7 +9,7 @@ async function bootstrap() {
 
   // ตั้งค่า Swagger
   const config = new DocumentBuilder()
-    .setTitle('Thidamas')
+    .setTitle('Insure Group API')
     .setDescription(
       'API documentation with JWT authentication for Upskilling and Reskilling programs',
     )
