@@ -11,7 +11,7 @@ export class User {
     @Column()
     password: string;
 
-    @Column()
+    @Column({})
     firstName: string;
 
     @Column()
@@ -25,6 +25,9 @@ export class User {
 
     @Column({ default: 'user' })
     role: string;
+
+    @Column({ default: true })
+    isActive: boolean;
 
     @Column({ type: 'datetime', default: () => 'CURRENT_TIMESTAMP' })
     createdAt: Date;
